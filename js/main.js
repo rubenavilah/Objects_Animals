@@ -32,3 +32,12 @@ console.log(jirafa, araña, rata);
 //   var animal = new animal();
 //   ProtoAnimal = Object.create(animal);
 // };
+
+var Pokemon = function(){
+  var pokemon = Object.create(Animal());
+  pokemon.tipo = "agua";
+  // tipo, poder, energia, fuerza, atacar -> function energia/fuerza > 1 gano / else perdio
+  return pokemon;
+};
+
+var Pikachu = new Pokemon();
